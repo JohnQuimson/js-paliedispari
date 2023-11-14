@@ -3,6 +3,9 @@ body {
   color: #fffffe;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  width: 1000px;
+  margin: auto;
+  line-height: 25px;
 }
 
 span {
