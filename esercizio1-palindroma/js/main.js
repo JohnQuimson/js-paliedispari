@@ -2,8 +2,13 @@
 
 function palindroma(parola) {
   for (let i = 0; i < parola.length / 2; i++) {
-    console.log(i + '. ' + parola[i]);
+    if (parola[i] === parola[parola.length - 1 - i]) {
+      return 'La parola è palindroma';
+    }
   }
+  return 'La parola NON è palindroma';
 }
 
-const inpuUtente = prompt('Inserisci la parola');
+const inputUtente = prompt('Inserisci la parola');
+const risultato = palindroma(inputUtente);
+console.log(risultato);
