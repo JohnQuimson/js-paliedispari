@@ -20,8 +20,13 @@ let userInputPD = prompt('Pari o dispari ?');
 userInputPD = userInputPD.toLowerCase();
 console.log(`Hai scelto: ${userInputPD}`);
 
-//Chiedo il numero all'utente
+//Chiedo il numero all'utente, con la condizione che se è fuori dal range, me lo richiede
 let userInputNum = Number(prompt('Numero da 1 a 5'));
+
+while (userInputNum < 1 || userInputNum > 5 || isNaN(userInputNum)) {
+  alert('Inserisci un numero nel range 1-5');
+  userInputNum = Number(prompt('Numero da 1 a 5'));
+}
 console.log(`Hai scelto: ${userInputNum}`);
 
 //Numero random del PC
@@ -32,6 +37,7 @@ console.log(`Numero PC: ${pcNumber}`);
 const risultato = mySomma(userInputNum, pcNumber);
 console.log(`La somma è: ${userInputNum + pcNumber} --> ${risultato}`);
 
+//Condizioni di vittoria/sconfitta
 if (risultato === userInputPD) {
   console.log('Hai vinto');
 } else {
