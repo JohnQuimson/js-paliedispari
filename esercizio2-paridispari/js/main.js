@@ -15,14 +15,17 @@ function mySomma(userInputNum, pcNumber) {
 }
 
 //Chiedo all'utente pari o dispari
-let userInputPD = prompt('Pari o dispari ?');
+let userInputPD = prompt('Pari o Dispari ?');
+//Verifico che la parola non sia un numero
+while (!isNaN(userInputPD)) {
+  userInputPD = prompt('Pari o Dispari ?');
+}
 //Rendo l'input tutto minuscolo per evitare problemi
 userInputPD = userInputPD.toLowerCase();
 console.log(`Hai scelto: ${userInputPD}`);
 
 //Chiedo il numero all'utente, con la condizione che se è fuori dal range, me lo richiede
 let userInputNum = Number(prompt('Numero da 1 a 5'));
-
 while (userInputNum < 1 || userInputNum > 5 || isNaN(userInputNum)) {
   alert('Inserisci un numero nel range 1-5');
   userInputNum = Number(prompt('Numero da 1 a 5'));
