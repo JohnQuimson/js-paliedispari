@@ -13,7 +13,10 @@
 
 ### L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
 
-1. Chiedo in input all'utente pari o dispari e faccio inserire un numero da 1 a 5
-2. Con math.random genero un numero casuale da 1 a 5 per il PC
-3. sommo i 2 numeri e se %2 == 0 è pari altrimenti dispari
-4. Stampo il vincitore
+1. Chiedo all'utente pari o dispari e inserisco il valore in una variabile
+2. Con un ciclo while verifico che l'input sia una stringa e non un numero
+3. Chiedo all'utente un numero tra 1 e 5 inserisco il valore in una variabile
+4. Con un ciclo while verifico che il numero rientri nel range
+5. Scrivo una funzione per generare il numero casuale per il computer
+6. Scrivo un'altra funzione per verificare se la somma è pari o dispari
+7. Con una condizione if, verifico se la funzione mi ritorna pari o dispari e in base a ciò stampo il vincitore
