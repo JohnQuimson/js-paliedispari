@@ -8,9 +8,9 @@ function myRandom() {
 function mySomma(userInputNum, pcNumber) {
   const sum = userInputNum + pcNumber;
   if (sum % 2 === 0) {
-    return 'PARI';
+    return 'pari';
   } else {
-    return 'DISPARI';
+    return 'dispari';
   }
 }
 
@@ -30,4 +30,10 @@ console.log(`Numero PC: ${pcNumber}`);
 
 //Richiamo la funzione della somma
 const risultato = mySomma(userInputNum, pcNumber);
-console.log(risultato);
+console.log(`La somma è: ${userInputNum + pcNumber} --> ${risultato}`);
+
+if (risultato === userInputPD) {
+  console.log('Hai vinto');
+} else {
+  console.log('Hai perso');
+}
