@@ -1,0 +1,14 @@
+body {
+  background-color: #0f0e17;
+  color: #fffffe;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+span {
+  color: #ff8906;
+}
+
+#secondary {
+  color: #f25f4c;
+}
